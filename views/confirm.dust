@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TA Pixel Demo - Confirmation</title>
+  </head>
+  <body>
+    {>"header" subtitle="Booking Confirmation"/}
+    <div class="content">
+      <p>Thanks for booking with us!</p>
+    </div>
+  </body>
+</html>

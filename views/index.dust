@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TA Pixel Demo</title>
+  </head>
+  <body>
+    {>"header" subtitle="Hotel Detail"/}
+    <div class="content">
+      <p>This hotel has all sorts of fancy amenities. You should book right away!</p>
+      <a href="/book">Book now!</a>
+    </div>
+  </body>
+</html>

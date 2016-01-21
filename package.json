@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "consolidate": "^0.13.1",
+    "dustjs-linkedin": "^2.7.2",
     "express": "^4.13.3"
   },
   "devDependencies": {},

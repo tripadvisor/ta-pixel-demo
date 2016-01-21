@@ -11,14 +11,27 @@
 'use strict';
 
 var express = require('express');
+var cons = require('consolidate');
 var app = express();
 
+app.engine('dust', cons.dust);
+app.set('view engine', 'dust');
+app.set('views', __dirname + '/views');
+
 app.get('/', function(req, res) {
-  res.send('Hello World!');
+  res.render('index', {});
 });
 
-app.listen(3000, function() {
-  console.log('Demo site listening on port 3000');
+app.get('/book', function(req, res) {
+  res.render('book', {});
+});
+
+app.get('/confirm', function(req, res) {
+  res.render('confirm', {});
+});
+
+app.listen(8080, function() {
+  console.log('Demo site listening on port 8080');
 });
 
 

@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>TA Pixel Demo - Book</title>
+  </head>
+  <body>
+    {>"header" subtitle="Booking Details"/}
+    <div class="content">
+      <p>Fill in your booking details, then check out!</p>
+      <a href="/confirm">Check out!</a>
+    </div>
+  </body>
+</html>

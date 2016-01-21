@@ -1,0 +1,11 @@
+<script type='text/javascript'>
+  (function(f,a,c,d,g,b,h,e){if(f.taq){return;}b=f.taq=function(){b.queue.push(arguments)};b.queue=[];if(/bot|googlebot|crawler|spider|robot|crawling/i.test(c.userAgent)){return;}h=a.createElement(d);h.async=true;h.src=g;e=a.getElementsByTagName(d)[0];e.parentNode.insertBefore(h,e)})(window,document,navigator,"script","http://mtownsend.nw.dev.tripadvisor.com/js3/taevents-c.js");
+
+  taq('init', '987654321');
+  taq('track', 'PageView');
+</script>
+
+<header>
+  <h1>TA Pixel Demo OTA<h1>
+  {?subtitle}<h2>{subtitle}</h2>{/subtitle}
+</header>
