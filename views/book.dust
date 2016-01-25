@@ -1,13 +1,14 @@
-<!doctype html>
-<html>
-  <head>
-    <title>TA Pixel Demo - Book</title>
-  </head>
-  <body>
-    {>"header" subtitle="Booking Details"/}
-    <div class="content">
-      <p>Fill in your booking details, then check out!</p>
-      <a href="/confirm">Check out!</a>
-    </div>
-  </body>
-</html>
+{>"header" subtitle="Booking Details"/}
+{<bodyContent}
+  <section class="content">
+    <p>Fill in your booking details, then check out!</p>
+    <a href="/confirm{url_params}">Check out!</a>
+  </section>
+  <script type="text/javascript">
+    taq('track', 'START_BOOKING', {
+      'page_type': 'CC_ENTRY'
+      {>"params" /}
+    });
+  </script>
+{/bodyContent}
+

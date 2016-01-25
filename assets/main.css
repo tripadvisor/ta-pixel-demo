@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.centered {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.param_form {
+    background: linear-gradient(to bottom, #68b14e 0%,#589442 100%);
+    border-bottom: 1px solid #68B04D;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease-in-out;
+}
+.open .param_form {
+    transform: translateY(0);
+}
+.param_form label {
+    display: block;
+    margin: 5px 0;
+    width:250px;
+    position: relative;
+}
+.param_form label input {
+    position: absolute;
+    right: 0;
+    width: 150px;
+}
+.param_form .toggle {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    background: #589442;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+.burger {
+    fill: white;
+    left: 50%;
+    position: absolute;
+    margin-left: -16px;
+}
+.burger .bar {
+    -webkit-transform: rotate(0) translateY(0) translateX(0);
+    transform: rotate(0deg) translateY(0) translateX(0);
+    opacity: 1;
+    -webkit-transform-origin: 20px 10px;
+    transform-origin: 20px 10px;
+    -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+    transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
+}
+.burger .bar:nth-of-type(1) {
+    -webkit-transform-origin: 20px 10px;
+    transform-origin: 20px 10px;
+}
+.burger .bar:nth-of-type(3) {
+    -webkit-transform-origin: 20px 20px;
+    transform-origin: 20px 20px;
+}
+
+.open .burger .bar:nth-of-type(1) {
+    -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
+    transform: rotate(-45deg) translateY(0) translateX(0);
+}
+.open .burger .bar:nth-of-type(2) {
+    opacity: 0;
+}
+.open .burger .bar:nth-of-type(3) {
+    -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
+    transform: rotate(45deg) translateY(0em) translateX(0em);
+}

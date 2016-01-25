@@ -1,13 +1,14 @@
-<!doctype html>
-<html>
-  <head>
-    <title>TA Pixel Demo</title>
-  </head>
-  <body>
-    {>"header" subtitle="Hotel Detail"/}
-    <div class="content">
+{>"header" subtitle="Hotel Detail"/}
+{<bodyContent}
+  <section class="content">
       <p>This hotel has all sorts of fancy amenities. You should book right away!</p>
-      <a href="/book">Book now!</a>
-    </div>
-  </body>
-</html>
+      <a href="/book{url_params}">Book now!</a>
+  </section>
+  <script type="text/javascript">
+      taq('track', 'PageView', {
+          'page_type': 'DETAIL'
+        {>"params" /}
+      });
+  </script>
+{/bodyContent}
+
