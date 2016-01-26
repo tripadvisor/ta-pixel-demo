@@ -1,7 +1,14 @@
 {>"header" subtitle="Booking Confirmation"/}
 {<bodyContent}
   <section class="content">
-    <p>Thanks for booking with us!</p>
+    <p>
+        This is a placeholder for a booking confirmation page.
+        It displays a confirmation message for users who have completed booking.
+    </p>
+    <p>
+        This page will be tracked as a 'CONFIRMATION' page_type with a 'BOOKING_CONFIRMATION' event.
+        Note that this event type will report booking conversions, if all the necessary parameters are present.
+    </p>
     <a href="/{url_params}">Back to Hotel Detail</a>
   </section>
   <script type="text/javascript">

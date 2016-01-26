@@ -1,7 +1,13 @@
 {>"header" subtitle="Booking Details"/}
 {<bodyContent}
   <section class="content">
-    <p>Fill in your booking details, then check out!</p>
+    <p>
+        This is a placeholder for a booking information page.
+        It provides a billing information form.
+    </p>
+    <p>
+        This page will be tracked as a 'CC_ENTRY' page_type with a 'START_BOOKING' event.
+    </p>
     <a href="/confirm{url_params}">Check out!</a>
   </section>
   <script type="text/javascript">

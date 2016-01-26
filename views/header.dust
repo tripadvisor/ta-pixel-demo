@@ -11,16 +11,13 @@
       taq('override', 'http://mtownsend.nw.dev.tripadvisor.com/RT');
       taq('init', '987654321');
     </script>
-    <div class="centered">
       <form id='param_form' class='param_form' method="get">
         <label>Start Date: <input name="start_date" type="date" value="{start_date}"></label>
         <label>End Date: <input name="end_date" type="date" value="{end_date}"></label>
         <label>User Type: <input name="user_type" type="text" value="{user_type}"></label>
         <button type="submit">UPDATE</button>
         <div id="form_toggle" class="toggle">
-            <svg class="burger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="32px" height="32px" viewBox="0 5 22.5 18.5" xml:space="preserve">
-            <title>Mobile Menu</title>
+          <svg class="burger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 5 22.5 18.5" xml:space="preserve">
             <g class="svg-menu-toggle">
               <path class="bar" d="M20.945,8.75c0,0.69-0.5,1.25-1.117,1.25H3.141c-0.617,0-1.118-0.56-1.118-1.25l0,0c0-0.69,0.5-1.25,1.118-1.25h16.688C20.445,7.5,20.945,8.06,20.945,8.75L20.945,8.75z"></path>
               <path class="bar" d="M20.923,15c0,0.689-0.501,1.25-1.118,1.25H3.118C2.5,16.25,2,15.689,2,15l0,0c0-0.689,0.5-1.25,1.118-1.25 h16.687C20.422,13.75,20.923,14.311,20.923,15L20.923,15z"></path>
@@ -30,10 +27,11 @@
         </div>
       </form>
       <header>
-        <h1>TA Pixel Demo OTA</h1>
+        <h1>TA Pixel Demo</h1>
         {?subtitle}<h2>{subtitle}</h2>{/subtitle}
       </header>
-      {+bodyContent /}
-    </div>
+      <div class="centered">
+        {+bodyContent /}
+      </div>
   </body>
 </html>

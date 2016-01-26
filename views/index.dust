@@ -1,7 +1,13 @@
 {>"header" subtitle="Hotel Detail"/}
 {<bodyContent}
   <section class="content">
-      <p>This hotel has all sorts of fancy amenities. You should book right away!</p>
+      <p>
+          This is a placeholder for a Detail page.
+          It displays information about an accommodation, and provides links to book.
+      </p>
+      <p>
+          This page will be tracked as a 'DETAIL' page_type.
+      </p>
       <a href="/book{url_params}">Book now!</a>
   </section>
   <script type="text/javascript">
