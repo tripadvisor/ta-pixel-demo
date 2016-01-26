@@ -13,6 +13,7 @@
 var express = require('express');
 var cons = require('consolidate');
 var app = express();
+var Promise = require('promise');
 
 var SUPPORTED_PARAMS = ['start_date', 'end_date', 'user_type'];
 
@@ -57,8 +58,21 @@ app.get('/confirm', function(req, res) {
   res.render('confirm', getParams(req));
 });
 
-app.listen(8080, function() {
-  console.log('Demo site listening on port 8080');
-});
+function start() {
+  return new Promise(function(resolve) {
+    app.listen(8080, function () {
+      console.log('Demo site listening on port 8080');
+      resolve();
+    });
+  });
+}
 
+module.exports = {
+  start: start
+};
+
+// Start the server if we're calling this module directly
+if (require.main === module) {
+  start();
+}
 

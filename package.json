@@ -8,10 +8,15 @@
     "dustjs-linkedin": "^2.7.2",
     "express": "^4.13.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
+    "phantomjs": "^2.1.2",
+    "promise": "^7.1.1"
+  },
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test-harness.js"
   },
   "repository": {
     "type": "git",
