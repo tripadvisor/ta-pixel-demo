@@ -12,7 +12,6 @@
   </section>
   <script type="text/javascript">
       taq('track', 'PageView', {
-          'page_type': 'DETAIL'
         {>"params" /}
       });
   </script>

@@ -15,9 +15,10 @@ var cons = require('consolidate');
 var app = express();
 var Promise = require('promise');
 
-var SUPPORTED_PARAMS = ['start_date', 'end_date', 'user_type'];
+var SUPPORTED_PARAMS = ['start_date', 'end_date', 'is_member'];
 
 app.engine('dust', cons.dust);
+cons.dust.helpers = require('dustjs-helpers');
 app.set('view engine', 'dust');
 app.set('views', __dirname + '/views');
 app.use('/assets', express.static(__dirname + '/assets'));

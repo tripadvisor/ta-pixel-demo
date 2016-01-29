@@ -13,7 +13,6 @@
   </section>
   <script type="text/javascript">
     taq('track', 'BOOKING_CONFIRMATION', {
-      'page_type': 'CONFIRMATION',
       'partner': 'TEST_OTA',
       'refid': '12345',
       'gbv': '67890',

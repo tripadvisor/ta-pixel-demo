@@ -12,9 +12,14 @@
       taq('init', '987654321');
     </script>
       <form id='param_form' class='param_form' method="get">
-        <label>Start Date: <input name="start_date" type="date" value="{start_date}"></label>
-        <label>End Date: <input name="end_date" type="date" value="{end_date}"></label>
-        <label>User Type: <input name="user_type" type="text" value="{user_type}"></label>
+        <label class="main-label">Start Date: <input name="start_date" type="date" value="{start_date}"></label>
+        <label class="main-label">End Date: <input name="end_date" type="date" value="{end_date}"></label>
+          <label class="main-label">Is Member:
+            <fieldset>
+              <label class="inner-label">true <input name="is_member" type="radio" value="true" {@eq key=is_member value="true"}checked{/eq}></label>
+              <label class="inner-label">false <input name="is_member" type="radio" value="false" {@ne key=is_member value="true"}checked{/ne}></label>
+            </fieldset>
+        </label>
         <button type="submit">UPDATE</button>
         <div id="form_toggle" class="toggle">
           <svg class="burger" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 5 22.5 18.5" xml:space="preserve">

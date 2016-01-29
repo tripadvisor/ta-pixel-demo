@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "consolidate": "^0.13.1",
+    "dustjs-helpers": "^1.7.3",
     "dustjs-linkedin": "^2.7.2",
     "express": "^4.13.3"
   },

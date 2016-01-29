@@ -47,14 +47,23 @@ section {
 .open .param_form {
     transform: translateY(0);
 }
-.param_form label {
+.param_form .main-label {
     display: block;
     margin: 5px 0;
     width:250px;
     position: relative;
 }
-.param_form label input {
+.inner-label:first-child {
+    margin-right: 10px;
+}
+.param_form fieldset {
+    padding: 0 10px;
+    border: none;
+}
+.param_form label input[type=date],
+.param_form label fieldset {
     position: absolute;
+    top: 0;
     right: 0;
     width: 150px;
 }
