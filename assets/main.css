@@ -73,43 +73,9 @@ section {
     right: 0;
     width: 100px;
     height: 40px;
+    line-height: 40px;
+    text-align: center;
     background: #589442;
     border-radius: 0 0 10px 10px;
     cursor: pointer;
-}
-
-.burger {
-    fill: white;
-    left: 50%;
-    position: absolute;
-    margin-left: -16px;
-}
-.burger .bar {
-    -webkit-transform: rotate(0) translateY(0) translateX(0);
-    transform: rotate(0deg) translateY(0) translateX(0);
-    opacity: 1;
-    -webkit-transform-origin: 20px 10px;
-    transform-origin: 20px 10px;
-    -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
-    transition: transform 0.2s ease-in-out, opacity 0.1s ease-in-out;
-}
-.burger .bar:nth-of-type(1) {
-    -webkit-transform-origin: 20px 10px;
-    transform-origin: 20px 10px;
-}
-.burger .bar:nth-of-type(3) {
-    -webkit-transform-origin: 20px 20px;
-    transform-origin: 20px 20px;
-}
-
-.open .burger .bar:nth-of-type(1) {
-    -webkit-transform: rotate(-45deg) translateY(0) translateX(0);
-    transform: rotate(-45deg) translateY(0) translateX(0);
-}
-.open .burger .bar:nth-of-type(2) {
-    opacity: 0;
-}
-.open .burger .bar:nth-of-type(3) {
-    -webkit-transform: rotate(45deg) translateY(0em) translateX(0em);
-    transform: rotate(45deg) translateY(0em) translateX(0em);
 }

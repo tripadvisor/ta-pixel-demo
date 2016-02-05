@@ -6,7 +6,7 @@
         It displays a confirmation message for users who have completed booking.
     </p>
     <p>
-        This page will be tracked as a 'CONFIRMATION' page_type with a 'BOOKING_CONFIRMATION' event.
+        This page will be tracked as a 'BOOKING_CONFIRMATION' event.
         Note that this event type will report booking conversions, if all the necessary parameters are present.
     </p>
     <a href="/{url_params}">Back to Hotel Detail</a>
@@ -17,7 +17,7 @@
       'refid': '12345',
       'gbv': '67890',
       'currency': 'USD',
-      'order_id': 'abcde'
+      'order_id': 'abcde',
       {>"params" /}
     });
   </script>

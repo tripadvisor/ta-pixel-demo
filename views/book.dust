@@ -6,7 +6,7 @@
         It provides a billing information form.
     </p>
     <p>
-        This page will be tracked as a 'CC_ENTRY' page_type with a 'START_BOOKING' event.
+        This page will be tracked as a 'START_BOOKING' event.
     </p>
     <a href="/confirm{url_params}">Check out!</a>
   </section>

@@ -2,16 +2,16 @@
 {<bodyContent}
   <section class="content">
       <p>
-          This is a placeholder for a Detail page.
+          This is a placeholder for a Detail page.<br/>
           It displays information about an accommodation, and provides links to book.
       </p>
       <p>
-          This page will be tracked as a 'DETAIL' page_type.
+          This page will be tracked as a PAGEVIEW.
       </p>
       <a href="/book{url_params}">Book now!</a>
   </section>
   <script type="text/javascript">
-      taq('track', 'PageView', {
+      taq('track', 'PAGEVIEW', {
         {>"params" /}
       });
   </script>

@@ -1,3 +1,4 @@
-'is_member':'{is_member}'
-{?start_date}, 'start_date':'{start_date}'{/start_date}
-{?end_date}, 'end_date':'{end_date}'{/end_date}
+'debug': 'true',
+'is_member':'{@eq key=is_member value="true"}true{:else}false{/eq}'
+{?start_date}, 'travel_start_date':'{start_date}'{/start_date}
+{?end_date}, 'travel_end_date':'{end_date}'{/end_date}
